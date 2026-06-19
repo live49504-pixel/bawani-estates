@@ -4,7 +4,7 @@ interface Props {
   text: string;
 }
 
-const CHAR_DELAY = 30;
+const CHAR_DELAY = 40;
 
 export default function AnimatedHeading({ text }: Props) {
   const [visible, setVisible] = useState(false);
@@ -22,7 +22,7 @@ export default function AnimatedHeading({ text }: Props) {
   return (
     <>
       {lines.map((line, lineIndex) => (
-        <div key={lineIndex}>
+       <div key={lineIndex} className="whitespace-nowrap">
           {line.split("").map((char, charIndex) => {
             const delay =
               lineIndex * line.length * CHAR_DELAY +
@@ -30,8 +30,8 @@ export default function AnimatedHeading({ text }: Props) {
 
             return (
               <span
-                key={`${lineIndex}-${charIndex}`}
-                className="inline-block"
+                 key={`${lineIndex}-${charIndex}`}
+  className="inline-block whitespace-pre"
                 style={{
                   opacity: visible ? 1 : 0,
                   transform: visible
