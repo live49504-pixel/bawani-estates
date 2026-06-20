@@ -13,7 +13,8 @@ export default function Home() {
         loop
         muted
         playsInline
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-50% w-full object-cover"
+style={{ objectPosition: "center 0%" }}
       >
         <source
           src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260403_050628_c4e32401-fab4-4a27-b7a8-6e9291cd5959.mp4"
@@ -52,18 +53,23 @@ export default function Home() {
 </Link>
             </div>
 
-            <button className="rounded-lg bg-white px-6 py-2 text-sm font-medium text-black">
-              Start a Chat
-            </button>
+            <a
+  href="https://wa.me/923202481500"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden md:block rounded-lg bg-white px-6 py-2 text-sm font-medium text-black shadow-lg transition-all duration-300 hover:scale-105"
+>
+  Start a Chat
+</a>
           </nav>
         </div>
 
         {/* Hero */}
         <div className="flex flex-1 flex-col justify-end px-6 pb-12 md:px-12 lg:px-16 lg:pb-16">
           <div className="lg:grid lg:grid-cols-2 lg:items-end">
-            <div>
+            <div className="max-w-xl">
               <h1
-  className="mb-4 text-4xl font-normal md:text-5xl lg:text-6xl xl:text-7xl"
+  className="mb-4 text-3xl font-normal md:text-5xl lg:text-6xl xl:text-7xl"
   style={{ letterSpacing: "-0.04em" }}
 >
   <AnimatedHeading
@@ -78,13 +84,19 @@ export default function Home() {
 
               <FadeIn delay={1200}>
                 <div className="flex flex-wrap gap-4">
-                    <button className="rounded-lg bg-white px-8 py-3 font-medium text-black transition hover:bg-gray-100">
-                    Explore Properties
-                     </button>
+                    <Link
+  to="/properties"
+  className="rounded-lg bg-white px-8 py-3 font-medium text-black transition hover:bg-gray-100"
+>
+  Explore Properties
+</Link>
 
-                     <button className="liquid-glass rounded-lg border border-white/20 px-8 py-3 font-medium transition hover:bg-white hover:text-black">
-                    Schedule Consultation
-                    </button>
+                     <Link
+  to="/contact#inquiry"
+  className="liquid-glass rounded-lg border border-white/20 px-8 py-3 font-medium transition hover:bg-white hover:text-black"
+>
+  Schedule Consultation
+</Link>
                  </div>
              </FadeIn>
             </div>
