@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
+import AIChat from "../components/AIChat";
 
 export default function About() {
   return (
@@ -51,6 +52,7 @@ export default function About() {
 
      <Footer />
  <WhatsAppButton />
+ <AIChat />
     </>
   );
 }

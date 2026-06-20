@@ -3,6 +3,7 @@ import FadeIn from "../components/FadeIn";
 import AnimatedHeading from "../components/AnimatedHeading";
 import { Link } from "react-router-dom";
 import WhatsAppButton from "../components/WhatsAppButton";
+import AIChat from "../components/AIChat";
 
 export default function Home() {
   return (
@@ -274,6 +275,7 @@ style={{ objectPosition: "center 0%" }}
   <p>Dubai • London • New York • Singapore</p>
 </div>
 <WhatsAppButton />
+<AIChat />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
+import AIChat from "../components/AIChat";
 
 export default function Properties() {
   return (
@@ -201,6 +202,7 @@ export default function Properties() {
 
       <Footer />
       <WhatsAppButton />
+      <AIChat />
     </>
   );
 }

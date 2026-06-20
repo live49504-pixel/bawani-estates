@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
+import AIChat from "../components/AIChat";
 
 export default function Contact() {
   return (
@@ -101,6 +102,7 @@ export default function Contact() {
 
       <Footer />
  <WhatsAppButton />
+ <AIChat />
     </>
   );
 }
